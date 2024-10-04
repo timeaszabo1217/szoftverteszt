@@ -1,10 +1,11 @@
 # Tesztjegyzőkönyv
 
-Az alábbi tesztdokumentum a `2023_IB153I-12_A` projekt funkcióihoz készült. Felelőse: `Durucz Ádám` 
+Az alábbi tesztdokumentum a `aps2019project/Duelers` projekt funkcióihoz készült. Felelőse: `Szabó Tímea` 
 
 ``` 
-A tesztelési dokumentáció részletesen bemutatja és leírja a Projekttervben meghatározott főbb funkciók tesztelési procedúráját, beleértve a specifikus teszteseteket és azok eredményeit. 
+A tesztelési dokumentáció részletesen bemutatja és leírja a projektben meghatározott főbb funkciók tesztelési procedúráját, beleértve a specifikus teszteseteket és azok eredményeit. 
 ``` 
+Az alábbiak csak példák!
 
 ## 1. Teszteljárások (TP)
 
