@@ -1,0 +1,3 @@
+[submodule "Duelers"]
+	path = Duelers
+	url = https://github.com/aps2019project/Duelers.git
