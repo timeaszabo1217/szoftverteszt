@@ -10,11 +10,15 @@ import server.dataCenter.models.card.CardType;
 import server.dataCenter.models.sorter.StoriesSorter;
 import server.gameCenter.models.game.Story;
 import server.gameCenter.models.game.TempStory;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+//fixed: new imports
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 
 import static server.dataCenter.DataCenter.loadFile;
 
@@ -152,14 +156,24 @@ public class Rest implements DataBase {
         HttpResponse<String> response = null;
         HashMap<String, Object> parameters = new HashMap<>();
         parameters.put("name", name);
+
         try {
             response = Unirest.post(baseAddress + path)
                     .fields(parameters)
                     .asString();
-            if (response.getStatus() == 200)
-                return JsonConverter.fromJson(response.getBody(), ArrayList.class);
-        } catch (Exception e) {
+            //fixed: getBody() doesnt exist
+            if (response.getStatus() == 200) {
+                InputStream inputStream = response.getRawBody();
+                StringBuilder jsonBody = new StringBuilder();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    jsonBody.append(line);
+                }
 
+                return JsonConverter.fromJson(jsonBody.toString(), ArrayList.class);
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -176,11 +190,22 @@ public class Rest implements DataBase {
         HashMap<String, Object> parameters = new HashMap<>();
         parameters.put("name", name);
         parameters.put("key", key);
+
         try {
             response = Unirest.post(baseAddress + path)
                     .fields(parameters)
                     .asString();
-            return response.getBody();
+
+            //fixed: getBody() doesnt exist
+            InputStream inputStream = response.getRawBody();
+            StringBuilder responseBody = new StringBuilder();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                responseBody.append(line);
+            }
+
+            return responseBody.toString();
         } catch (Exception e) {
             e.printStackTrace();
         }
