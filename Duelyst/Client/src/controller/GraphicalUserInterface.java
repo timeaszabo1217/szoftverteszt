@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 import models.gui.UIConstants;
 import view.LoginMenu;
 
+import java.util.Objects;
+
 public class GraphicalUserInterface {
     private static GraphicalUserInterface GUI;
     private Stage stage;
@@ -67,7 +69,7 @@ public class GraphicalUserInterface {
 
     private void makeScene(AnchorPane root) {
         scene = new Scene(root, UIConstants.SCENE_WIDTH, UIConstants.SCENE_HEIGHT);
-        scene.getStylesheets().add(this.getClass().getResource("/styles/scroll_pane.css").toExternalForm());
+        scene.getStylesheets().add("resources/styles/scroll_pane.css");
         scene.setCursor(UIConstants.DEFAULT_CURSOR);
         stage.setScene(scene);
     }
