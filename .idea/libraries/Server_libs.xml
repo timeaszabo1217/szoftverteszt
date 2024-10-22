@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="Server libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Libs/commons-codec-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpasyncclient-4.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx-graphics-23-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/unirest-java-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpmime-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/gson-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpcore-nio-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/json-20160212.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpcore-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/httpclient-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/javafx-base-23-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
