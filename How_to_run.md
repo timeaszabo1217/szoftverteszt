@@ -1,3 +1,5 @@
+Video: https://youtu.be/dUxtx0L6a8Y
+
 Open Project Structure (Ctrl + Alt + Shift + S)
 In Libraries: 
 Add Java library to Client and Server
