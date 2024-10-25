@@ -1,6 +1,6 @@
 Video: https://youtu.be/dUxtx0L6a8Y
 
-Use OracleJDK, not OpenJDK, because you have to use javafx, which is just in that.
+Use Oracle OpenJDK, because you have to use javafx, which is just in that.
 
 Open Project Structure (Ctrl + Alt + Shift + S)
 In Libraries: 
