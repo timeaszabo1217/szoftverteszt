@@ -22,6 +22,8 @@
       <root url="jar://$PROJECT_DIR$/Libs/javafx.media.jar!/" />
       <root url="jar://$PROJECT_DIR$/Libs/javafx.swing.jar!/" />
       <root url="jar://$PROJECT_DIR$/Libs/httpasyncclient-4.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/junit-jupiter-5.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/mockito-core-5.14.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
