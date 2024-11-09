@@ -3,14 +3,14 @@ Video: https://youtu.be/dUxtx0L6a8Y
 Use Oracle OpenJDK, because you have to use javafx, which is just in that.
 
 Open Project Structure (Ctrl + Alt + Shift + S)
-In Libraries: 
+In Libraries:
 Add Java library to Client and Server
 Add the .jar files to Client and Server too, than Apply
-In Dependencies: 
+In Dependencies:
 Tick it in Client and Server Modules too, than Apply
 (javafx jars is in the openjfx../javafx-sdk-23/lib folder)
 Its in windows mode, you can download Linux too in browser
-In Sources: 
+In Sources:
 src folders are Sources root, resources folders are Resources root
 
 Create two Java Application Runner, than Edit Configuration
