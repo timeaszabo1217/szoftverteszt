@@ -1,8 +1,0 @@
-- Kliens oldal unit tesztek
- -- controllerek tesztelése 1
- -- controllerek tesztelése 2
-
-- Szerver oldal unit tesztek
- -- szerver oldat unit tesztek 1
- -- szerver oldat unit tesztek 2
-
