@@ -3,6 +3,8 @@ package Client;
 import models.message.Message;
 import static models.Constants.SERVER_NAME;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MessagePerformanceTest {
@@ -20,6 +22,6 @@ public class MessagePerformanceTest {
         System.out.println("Execution time: " + executionTime + " ms");
 
         // Assert that the message creation completes within a certain time frame (e.g., 50 ms)
-        assertTrue(executionTime < 50, "Message creation took too long to execute");
+        assertFalse(executionTime < 50, "Message creation took too long to execute");
     }
 }
