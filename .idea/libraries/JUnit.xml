@@ -9,8 +9,14 @@
       <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/junit-jupiter-5.8.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/junit-jupiter-api-5.8.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/junit-jupiter-params-5.8.1.jar!/" />
+      <root url="file://$PROJECT_DIR$/Libs/JUnit libs" />
+      <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/byte-buddy-1.14.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/byte-buddy-agent-1.14.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/powermock-module-junit4-2.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Libs/JUnit libs/powermock-api-mockito2-2.0.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/Libs/JUnit libs" recursive="false" />
   </library>
 </component>
