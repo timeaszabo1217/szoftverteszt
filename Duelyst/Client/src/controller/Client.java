@@ -42,6 +42,12 @@ public class Client {
     private Client() {
     }
 
+    // Created by TTamas
+    public static void setInstance(Client newClient) {
+        client = newClient;
+    }
+
+
     public static Client getInstance() {
         if (client == null) {
             client = new Client();
