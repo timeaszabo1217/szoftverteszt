@@ -34,8 +34,10 @@
       <root url="jar://$PROJECT_DIR$/../../Libs/JUnit libs/junit-platform-commons-1.8.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Libs/JUnit libs/junit-platform-engine-1.8.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Libs/JUnit libs/opentest4j-1.2.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Libs" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Libs" recursive="false" />
   </library>
 </component>

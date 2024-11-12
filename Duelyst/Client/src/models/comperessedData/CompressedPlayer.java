@@ -73,7 +73,8 @@ public class CompressedPlayer {
         }
     }
 
-    void addCardToCollectedItems(CompressedCard card) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void addCardToCollectedItems(CompressedCard card) {
         collectedItems.add(card);
         if (support == null) {
             support = new PropertyChangeSupport(this);
@@ -81,11 +82,13 @@ public class CompressedPlayer {
         support.firePropertyChange("items", null, null);
     }
 
-    void addCardToGraveYard(CompressedCard card) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void addCardToGraveYard(CompressedCard card) {
         graveyard.add(card);
     }
 
-    void troopUpdate(CompressedTroop troop) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void troopUpdate(CompressedTroop troop) {
         if (troops == null)
             troops = new ArrayList<>();
         removeTroop(troop.getCard().getCardId());
@@ -96,7 +99,8 @@ public class CompressedPlayer {
         }
     }
 
-    void removeCardFromHand(String cardId) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void removeCardFromHand(String cardId) {
         hand.removeIf(compressedCard -> compressedCard.getCardId().equalsIgnoreCase(cardId));
         if (support == null) {
             support = new PropertyChangeSupport(this);
@@ -112,7 +116,8 @@ public class CompressedPlayer {
         support.firePropertyChange("next", null, null);
     }
 
-    void removeCardFromCollectedItems(String cardId) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void removeCardFromCollectedItems(String cardId) {
         collectedItems.removeIf(compressedCard -> compressedCard.getCardId().equalsIgnoreCase(cardId));
         if (support == null) {
             support = new PropertyChangeSupport(this);
@@ -120,7 +125,8 @@ public class CompressedPlayer {
         support.firePropertyChange("items", null, null);
     }
 
-    void removeTroop(String cardId) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void removeTroop(String cardId) {
         if (troops == null)
             troops = new ArrayList<>();
         troops.removeIf(compressedTroop -> compressedTroop.getCard().getCardId().equalsIgnoreCase(cardId));
@@ -163,7 +169,8 @@ public class CompressedPlayer {
         return currentMP;
     }
 
-    void setCurrentMP(int currentMP, int turnNumber) {
+    // ADDDED PUBLIC BY TTAMAS
+    public void setCurrentMP(int currentMP, int turnNumber) {
         this.currentMP = currentMP;
     }
 

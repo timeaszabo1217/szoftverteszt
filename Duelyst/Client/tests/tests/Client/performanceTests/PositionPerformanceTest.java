@@ -2,6 +2,8 @@ package tests.Client.performanceTests;
 
 import models.game.map.Position;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PositionPerformanceTest {
@@ -13,7 +15,6 @@ public class PositionPerformanceTest {
 
         long startTime = System.nanoTime();
 
-        // Check if positions are next to each other
         boolean result = pos1.isNextTo(pos2);
 
         System.out.println(result);
@@ -21,8 +22,14 @@ public class PositionPerformanceTest {
         long executionTime = (endTime - startTime) / 1_000_000;
         System.out.println("Execution time: " + executionTime + " ms");
 
-        // Assert that the method completes within a certain time frame (e.g., 50 ms)
         assertTrue(executionTime < 50, "isNextTo method took too long to execute");
+    }
+
+    @Test
+    public void testPositionEquality() {
+        Position pos1 = new Position(3, 4);
+        Position pos2 = new Position(3, 4);
+        assertEquals(pos1, pos2, "Positions with same coordinates should be equal.");
     }
 
     @Test
@@ -32,7 +39,6 @@ public class PositionPerformanceTest {
 
         long startTime = System.nanoTime();
 
-        // Calculate Manhattan distance
         int distance = pos1.manhattanDistance(pos2);
 
         System.out.println(distance);
@@ -40,7 +46,6 @@ public class PositionPerformanceTest {
         long executionTime = (endTime - startTime) / 1_000_000;
         System.out.println("Execution time: " + executionTime + " ms");
 
-        // Assert that the calculation completes within a certain time frame (e.g., 50 ms)
         assertTrue(executionTime < 50, "Manhattan distance calculation took too long to execute");
     }
 }
