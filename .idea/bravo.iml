@@ -9,8 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Server" exported="" scope="TEST" />
     <orderEntry type="module" module-name="Client" exported="" scope="TEST" />
-    <orderEntry type="library" name="JUnit" level="project" />
-    <orderEntry type="library" exported="" name="mockito.core" level="project" />
-    <orderEntry type="library" exported="" name="mockito.junit.jupiter" level="project" />
+    <orderEntry type="library" exported="" name="JUnit" level="project" />
   </component>
 </module>

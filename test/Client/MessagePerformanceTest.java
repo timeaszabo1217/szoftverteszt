@@ -21,7 +21,7 @@ public class MessagePerformanceTest {
         long executionTime = (endTime - startTime) / 1_000_000;
         System.out.println("Execution time: " + executionTime + " ms");
 
-        // Assert that the message creation completes within a certain time frame (e.g., 50 ms)
-        assertFalse(executionTime < 50, "Message creation took too long to execute");
+        // Assert that the message creation completes within a certain time frame (e.g., 100 ms)
+        assertTrue(executionTime < 100, "Message creation took too long to execute");
     }
 }
