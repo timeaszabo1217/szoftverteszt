@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.compressedData;
 
 import models.comperessedData.CompressedCard;
 import models.comperessedData.CompressedPlayer;

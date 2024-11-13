@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.exceptions;
 
 import models.exceptions.InputException;
 import org.junit.jupiter.api.Test;

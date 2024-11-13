@@ -32,7 +32,8 @@ public class MainMenuController {
         Client.getInstance().addToSendingMessagesAndSend(Message.makeGetDataMessage(SERVER_NAME, DataName.LEADERBOARD));
     }
 
-    void addChatMessage(ChatMessage chatMessage) {
+    // Added public by TTamas
+    public void addChatMessage(ChatMessage chatMessage) {
         Platform.runLater(() -> GlobalChatDialog.getInstance().addMessage(chatMessage));
     }
 

@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.card;
 
 import models.card.CardType;
 import org.junit.jupiter.api.Test;

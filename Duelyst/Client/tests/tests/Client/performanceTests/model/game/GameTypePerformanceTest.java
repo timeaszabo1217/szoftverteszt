@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.game;
 
 import models.game.GameType;
 import org.junit.jupiter.api.Test;

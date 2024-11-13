@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.message;
 
 import models.message.GameUpdateMessage;
 import models.game.CellEffect;

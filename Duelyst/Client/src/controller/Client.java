@@ -111,7 +111,8 @@ public class Client {
         return new Socket(Constants.SERVER_IP, Constants.PORT);
     }
 
-    void addToSendingMessagesAndSend(Message message) {
+    // Added public by TTamas
+    public void addToSendingMessagesAndSend(Message message) {
         synchronized (sendingMessages) {
             sendingMessages.add(message);
             sendingMessages.notify();
@@ -314,7 +315,8 @@ public class Client {
         return account;
     }
 
-    void close() {
+    // Added public by TTamas
+    public void close() {
         try {
             if (socket != null) {
                 socket.close();

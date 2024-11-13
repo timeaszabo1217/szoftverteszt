@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.controller;
 
 import controller.Client;
 import controller.GameController;

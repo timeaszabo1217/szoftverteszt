@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.game.map;
 
 import models.game.map.Position;
 import org.junit.jupiter.api.Test;

@@ -1,9 +1,4 @@
-package tests.Client.performanceTests;
-
-import controller.GameController;
-import models.comperessedData.CompressedGame;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+package tests.Client.performanceTests.controller;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

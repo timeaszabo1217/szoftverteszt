@@ -1,4 +1,4 @@
-package tests.Client.performanceTests;
+package tests.Client.performanceTests.model.account;
 
 import models.account.AccountInfo;
 import models.account.AccountType;

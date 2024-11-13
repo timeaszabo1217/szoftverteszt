@@ -57,7 +57,8 @@ public class ShopController {
         showingCards = result;
     }
 
-    void addCard(Card customCard) {
+    // Added public by TTamas
+    public void addCard(Card customCard) {
         originalCards.addCard(customCard);
         if (Client.getInstance().getCurrentShow() instanceof ShopMenu) {
             ((ShopMenu) Client.getInstance().getCurrentShow()).search();
