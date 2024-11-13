@@ -1,7 +1,9 @@
-package Client;
+package Client.model.game;
 
 import models.game.GameType;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class GameTypePerformanceTest {
@@ -10,7 +12,6 @@ public class GameTypePerformanceTest {
     public void testGameTypeIterationPerformance() {
         long startTime = System.nanoTime();
 
-        // Iterate through all values of GameType
         for (GameType type : GameType.values()) {
             System.out.println("Processing type: " + type);
         }
@@ -19,7 +20,13 @@ public class GameTypePerformanceTest {
         long executionTime = (endTime - startTime) / 1_000_000;
         System.out.println("Execution time: " + executionTime + " ms");
 
-        // Assert that the iteration completes within a certain time frame (e.g., 100 ms)
         assertTrue(executionTime < 100, "GameType iteration took too long to execute");
+    }
+
+    @Test
+    public void testGameTypeValues() {
+        for (GameType type : GameType.values()) {
+            assertNotNull(type, "GameType should have a valid value.");
+        }
     }
 }

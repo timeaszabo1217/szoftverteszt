@@ -1,7 +1,9 @@
-package Client;
+package Client.model.card;
 
 import models.card.CardType;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CardTypePerformanceTest {
@@ -10,7 +12,6 @@ public class CardTypePerformanceTest {
     public void testCardTypeIterationPerformance() {
         long startTime = System.nanoTime();
 
-        // Iterate through all values of CardType
         for (CardType type : CardType.values()) {
             System.out.println("Processing type: " + type);
         }
@@ -19,7 +20,13 @@ public class CardTypePerformanceTest {
         long executionTime = (endTime - startTime) / 1_000_000;
         System.out.println("Execution time: " + executionTime + " ms");
 
-        // Assert that the iteration completes within a certain time frame (e.g., 100 ms)
         assertTrue(executionTime < 100, "CardType iteration took too long to execute");
+    }
+
+    @Test
+    public void testCardTypeValues() {
+        for (CardType type : CardType.values()) {
+            assertNotNull(type, "CardType should have a valid value.");
+        }
     }
 }
