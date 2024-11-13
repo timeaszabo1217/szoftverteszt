@@ -29,19 +29,23 @@ public class TempAccount {
         return collection;
     }
 
-    List<TempDeck> getDecks() {
+    // Added public by TTamas
+    public List<TempDeck> getDecks() {
         return Collections.unmodifiableList(decks);
     }
 
-    String getMainDeckName() {
+    // Added public by TTamas
+    public String getMainDeckName() {
         return mainDeckName;
     }
 
-    List<MatchHistory> getMatchHistories() {
+    // Added public by TTamas
+    public List<MatchHistory> getMatchHistories() {
         return Collections.unmodifiableList(matchHistories);
     }
 
-    int getMoney() {
+    // Added public by TTamas
+    public int getMoney() {
         return money;
     }
 
