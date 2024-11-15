@@ -29,7 +29,7 @@ I added <> tags to know that where you have to write in.
 To run the Application, you have to run Server app first, than Main (Client) app
 And tada, you can play now.
 
-I did some writing in the code, because some of that was outdated, I commented fixed to this places.
+I did some writing in the code, because some of that was outdated.
 For example: in Rest.java 160. and 183. row 'getBody()' to 'body()'.
 
 Tímea Szabó 2024
