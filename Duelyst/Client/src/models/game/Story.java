@@ -22,7 +22,8 @@ public class Story {
         return gameType;
     }
 
-    int getReward() {
+    //added public by TTamas
+    public int getReward() {
         return reward;
     }
 }

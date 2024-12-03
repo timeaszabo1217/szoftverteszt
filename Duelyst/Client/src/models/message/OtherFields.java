@@ -11,23 +11,28 @@ public class OtherFields {
     private Position position;
     private String sudoCommand;
 
-    void setDeckName(String deckName) {
+    // added public by TTamas
+    public void setDeckName(String deckName) {
         this.deckName = deckName;
     }
 
-    void setCardName(String cardName) {
+    // added public by TTamas
+    public void setCardName(String cardName) {
         this.cardName = cardName;
     }
 
-    void setMyCardId(String myCardId) {
+    // added public by TTamas
+    public void setMyCardId(String myCardId) {
         this.myCardId = myCardId;
     }
 
-    void setOpponentCardId(String opponentCardId) {
+    // added public by TTamas
+    public void setOpponentCardId(String opponentCardId) {
         this.opponentCardId = opponentCardId;
     }
 
-    void setMyCardIds(String[] myCardIds) {
+    // added public by TTamas
+    public void setMyCardIds(String[] myCardIds) {
         this.myCardIds = myCardIds;
     }
 
@@ -35,7 +40,8 @@ public class OtherFields {
         this.position = position;
     }
 
-    void setSudoCommand(String sudoCommand) {
+    // added public by TTamas
+    public void setSudoCommand(String sudoCommand) {
         this.sudoCommand = sudoCommand;
     }
 }
