@@ -12,7 +12,8 @@ public class GameResultController {
         return gameResultController;
     }
 
-    void setWinnerInfo(boolean amIWinner, int reward) {
+    // added public by TTamas
+    public void setWinnerInfo(boolean amIWinner, int reward) {
         this.amIWinner = amIWinner;
         this.reward = reward;
     }

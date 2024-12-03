@@ -19,7 +19,7 @@ public class OpponentInfoMessageTest {
     @BeforeEach
     void setup() {
         opponentInfo = mock(AccountInfo.class);
-        opponentInfoMessage = mock(OpponentInfoMessage.class);
+        opponentInfoMessage = new OpponentInfoMessage();
     }
 
     @Test

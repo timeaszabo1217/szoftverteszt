@@ -1,7 +1,5 @@
 package tests.Client.performanceTests.model.message;
 
-import models.card.spell.Spell;
-import models.game.availableActions.Attack;
 import models.message.CardAnimation;
 import models.message.GameAnimations;
 import models.message.SpellAnimation;
@@ -11,8 +9,6 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.mockito.Mockito.mock;
 
 public class GameAnimationsTest {
     private ArrayList<CardAnimation> attacks;
@@ -22,39 +18,42 @@ public class GameAnimationsTest {
 
     @BeforeEach
     void setup() {
-        CardAnimation cardAnimation1 = mock(CardAnimation.class);
-        CardAnimation cardAnimation2 = mock(CardAnimation.class);
+        gameAnimations = new GameAnimations();
 
         attacks = new ArrayList<>();
-        attacks.add(cardAnimation1);
-        attacks.add(cardAnimation2);
+        CardAnimation attack1 = new CardAnimation();
+        CardAnimation attack2 = new CardAnimation();
+        attacks.add(attack1);
+        attacks.add(attack2);
+        gameAnimations.getAttacks().addAll(attacks);
 
         counterAttacks = new ArrayList<>();
-        counterAttacks.add(cardAnimation1);
-        counterAttacks.add(cardAnimation2);
+        CardAnimation counterAttack1 = new CardAnimation();
+        CardAnimation counterAttack2 = new CardAnimation();
+        counterAttacks.add(counterAttack1);
+        counterAttacks.add(counterAttack2);
+        gameAnimations.getCounterAttacks().addAll(counterAttacks);
 
-        SpellAnimation spellAnimation1 = mock(SpellAnimation.class);
-        SpellAnimation spellAnimation2 = mock(SpellAnimation.class);
         spellAnimations = new ArrayList<>();
-
+        SpellAnimation spellAnimation1 = new SpellAnimation();
+        SpellAnimation spellAnimation2 = new SpellAnimation();
         spellAnimations.add(spellAnimation1);
         spellAnimations.add(spellAnimation2);
-
-        gameAnimations = mock(GameAnimations.class);
+        gameAnimations.getSpellAnimations().addAll(spellAnimations);
     }
 
     @Test
     void testGetAttacks() {
-        assertEquals(gameAnimations.getAttacks(), new ArrayList<CardAnimation>());
+        assertEquals(attacks, gameAnimations.getAttacks());
     }
 
     @Test
     void testGetCounterAttacks() {
-        assertEquals(gameAnimations.getCounterAttacks(), new ArrayList<CardAnimation>());
+        assertEquals(counterAttacks, gameAnimations.getCounterAttacks());
     }
 
     @Test
     void testGetSpellAnimations() {
-        assertEquals(gameAnimations.getSpellAnimations(), new ArrayList<SpellAnimation>());
+        assertEquals(spellAnimations, gameAnimations.getSpellAnimations());
     }
 }

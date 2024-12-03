@@ -28,12 +28,12 @@ public class SpellAnimationTest {
         positions.add(pos2);
 
         availabilityType = mock(AvailabilityType.class);
-        spellAnimation = mock(SpellAnimation.class);
+        spellAnimation = new SpellAnimation();
     }
 
     @Test
     void testGetPositions() {
-        assertEquals(spellAnimation.getPositions(), new HashSet<>());
+        assertNull(spellAnimation.getPositions());
     }
 
     @Test

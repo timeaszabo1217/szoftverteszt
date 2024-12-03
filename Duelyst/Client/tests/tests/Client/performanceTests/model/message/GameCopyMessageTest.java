@@ -15,7 +15,7 @@ public class GameCopyMessageTest {
     @BeforeEach
     void setup() {
         compressedGame = mock(CompressedGame.class);
-        gameCopyMessage = mock(GameCopyMessage.class);
+        gameCopyMessage = new GameCopyMessage();
     }
 
     @Test

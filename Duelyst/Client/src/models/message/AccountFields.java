@@ -1,6 +1,7 @@
 package models.message;
 
-class AccountFields {
+// added public by TTamas
+public class AccountFields {
     private String username;
     private String password;
 

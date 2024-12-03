@@ -15,7 +15,7 @@ public class GameFinishMessageTest {
 
     @BeforeEach
     void setup() {
-        gameFinishMessage = mock(GameFinishMessage.class);
+        gameFinishMessage = new GameFinishMessage();
     }
 
     @Test
