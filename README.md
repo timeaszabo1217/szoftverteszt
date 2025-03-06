@@ -10,7 +10,6 @@ A jelen projektben a szoftver tesztelésének alapjainak alkalmazása volt a fel
 - Szabó Tímea
 - Kardos Tamás
 - Török Tamás
-- Kovács Norbert
 
 ## Feladat szöveges leírása
 
