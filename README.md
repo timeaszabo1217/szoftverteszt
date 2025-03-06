@@ -1,6 +1,6 @@
 # Szoftvertesztelés alapjai
 
-A jelen projektben a szoftver tesztelésének alapjainak alkalmazása volt a feladatunk, amely során különböző tesztelési technikákat használtunk a rendszer megbízhatóságának és funkcionalitásának biztosítására.
+A projektben a szoftver tesztelésének alapjainak alkalmazása volt a feladatunk, amely során különböző tesztelési technikákat használtunk a rendszer megbízhatóságának és funkcionalitásának biztosítására.
 
 ## Projekt forrása
 
