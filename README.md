@@ -4,7 +4,7 @@ A jelen projektben a szoftver tesztelésének alapjainak alkalmazása volt a fel
 
 ## Projekt forrása
 
-[Projekt GitHub](https://github.com/aps2019project/Duelers)
+[Duelers](https://github.com/aps2019project/Duelers)
 
 ## Csapattagok
 - Szabó Tímea
